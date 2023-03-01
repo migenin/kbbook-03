@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYOBO 교보문고</title>
+
+    <script src="https://kit.fontawesome.com/bd9b8de471.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <script src="js/header.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/today.js"></script>
+    <script src="js/issue_api.js"></script>
+    <script src="js/issue.js"></script>
+    <script src="js/sample_api.js"></script>
+    <script src="js/only.js"></script>
+    <script src="js/rstar.js"></script>
+    <script src="js/booklist.js"></script>
+    <script src="js/brand.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="top_banner_wrap">
+            <div id="top_banner">
+                <img src="img/bnV_top.jpg" alt="top_img">
+                <img src="img/btn_close.gif" alt="close" class="top_close">
+            </div>
+        </div>
+        <header>
+            <div id="header">
+                <div class="header_box">
+                    <ul class="header_box_nav">
+                        <li><a href="#">바로콘 <img src="img/icon_off.gif" alt="off"></a></li>
+                        <li class="store"><a href="#">매장안내 <i class="fa-solid fa-angle-down"></i></a>
+                            <ul id="header_box_store">
+                                <li><a href="#">서울</a>
+                                    <ul class="store_list">
+                                        <li><a href="#">광화문점</a></li>
+                                        <li><a href="#">가든파이브 바로드림센터</a></li>
+                                        <li><a href="#">강남점</a></li>
+                                        <li><a href="#">건대 바로드림센터</a></li>
+                                        <li><a href="#">동대문 바로드림센터</a></li>
+                                        <li><a href="#">디큐브시티 바로드림센터</a></li>
+                                        <li><a href="#">목동점</a></li>
+                                        <li><a href="#">서울대 교내서점</a></li>
+                                        <li><a href="#">수유 바로드림센터</a></li>
+                                        <li><a href="#">신논현역스토어</a></li>
+                                        <li><a href="#">영등포점</a></li>
+                                        <li><a href="#">은평 바로드림센터</a></li>
+                                        <li><a href="#">이화여대 교내서점</a></li>
+                                        <li><a href="#">잠실점</a></li>
+                                        <li><a href="#">천호점</a></li>
+                                        <li><a href="#">청량리 바로드림센터</a></li>
+                                        <li><a href="#">합정점</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">경기/인천</a>
+                                    <ul class="store_list">
+                                        <li><a href="#">광교점</a></li>
+                                        <li><a href="#">광교 월드스퀘어센터</a></li>
+                                        <li><a href="#">부천점</a></li>
+                                        <li><a href="#">분당점</a></li>
+                                        <li><a href="#">송도 바로드림센터</a></li>
+                                        <li><a href="#">인천점</a></li>
+                                        <li><a href="#">일산점</a></li>
+                                        <li><a href="#">판교점</a></li>
+                                        <li><a href="#">평촌점</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">수도권 외</a>
+                                    <ul class="store_list">
+                                        <li><a href="#">경성대·부경대 센터</a></li>
+                                        <li><a href="#">광주상무 센터</a></li>
+                                        <li><a href="#">대구점</a></li>
+                                        <li><a href="#">대전점</a></li>
+                                        <li><a href="#">부산점</a></li>
+                                        <li><a href="#">세종 바로드림센터</a></li>
+                                        <li><a href="#">센텀시티점</a></li>
+                                        <li><a href="#">울산점</a></li>
+                                        <li><a href="#">전북대 교내서점</a></li>
+                                        <li><a href="#">전주 바로드림센터</a></li>
+                                        <li><a href="#">창원점</a></li>
+                                        <li><a href="#">천안점</a></li>
+                                        <li><a href="#">칠곡 센터</a></li>
+                                        <li><a href="#"></a>포항공대 교내서점</li>
+                                        <li><a href="#"></a>해운대센터</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="membership"><a href="#">회원혜택 <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="membership_club">
+                                <li><a href="#">교보북클럽</a></li>
+                                <li><a href="#">등급별 회원혜택</a></li>
+                                <li><a href="#">신규회원 혜택</a></li>
+                                <li><a href="#">제휴포인트/상품권</a></li>
+                                <li><a href="#">참좋은 교보문고</a></li>
+                                <li><a href="#">Prestige Lounge</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Prestige Lounge</a></li>
+                    </ul>
+
+                    <ul class="header_box_nav">
+                        <li class="button"><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">출석체크</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">주문배송</a></li>
+                        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="header_box1">
+                    <div id="header_logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
+
+                    <div id="search_wrap">
+                        <div id="header_search">
+                            <ul class="wordlist">
+                                <li><a href="#">300만 베스트셀러 작가</a></li>
+                                <li>|</li>
+                                <li><a href="#">오은영박사 치유특강</a></li>
+                            </ul>
+                            <ul class="wordlist">
+                                <li><a href="#">교보굿즈 베스트</a></li>
+                                <li>|</li>
+                                <li><a href="#">식물의 은밀한 감정</a></li>
+                                <li>|</li>
+                                <li><a href="#">필사하고 싶은 책</a></li>
+                                <li>|</li>
+                                <li><a href="#">클래식 감상</a></li>
+                            </ul>
+                            <ul class="wordlist">
+                                <li><a href="#">똑똑한하루</a></li>
+                                <li>|</li>
+                                <li><a href="#">외국어 사은품8종</a></li>
+                                <li>|</li>
+                                <li><a href="#">초등 최상위 비문학</a></li>
+                                <li>|</li>
+                                <li><a href="#">오로라 에디션</a></li>
+                            </ul>
+                            <div id="header_btn_box">
+                                <a href="#"><img src="img/btn_left.jpg" class="btn_prev" onclick="plus(-1)" alt="btn"></a>
+                                <a href="#"><img src="img/btn_right.jpg" class="btn_next" onclick="plus(1)" alt="btn"></a>
+                            </div>
+                        </div>
+
+                        <div id="header_search_box">
+                            <input type="text" id="search_input" placeholder="파리로 떠나는 도시산책 인문여행">
+                            <img src="img/header_search.png" alt="search">
+                        </div>
+                    </div>
+
+                    <div id="header_banner">
+                        <ul>
+                            <li><a href="#"><img src="img/header_bn1.jpg" alt="banner"></a></li>
+                            <li><a href="#"><img src="img/header_bn2.jpg" alt="banner"></a></li>
+                            <li><a href="#"><img src="img/header_bn3.jpg" alt="banner"></a></li>
+                            <li><a href="#"><img src="img/header_bn4.jpg" alt="banner"></a></li>
+                            <li><a href="#"><img src="img/header_bn5.jpg" alt="banner"></a></li>
+                        </ul>
+                        <div class="list_nav">
+                            <span class="page">1/5</span>
+                            <a href="#"><img src="img/btn_left.jpg" class="btn_prev" alt="btn"></a>
+                            <a href="#"><img src="img/btn_right.jpg" class="btn_next" alt="btn"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        <nav>
+            <div id="nav_box">
+                <ul class="main_nav">
+                    <li><a href="./sub.html" class="hamburger"><i class="fa-solid fa-bars"></i></a>
+                        <ul id="main_nav_sub">
+                            <li>국내도서</li>
+                            <li>외국도서</li>
+                            <li>ebook</li>
+                            <li>장르 · 코믹스</li>
+                            <li>sam</li>
+                            <li>기프트</li>
+                            <li>음반 · DVD</li>
+                            <li>중고장터</li>
+                            <li>ONLY 교보문고</li>
+                        </ul>
+                    </li>
+                    <li><a href="./sub.html">국내도서</a></li>
+                    <li><a href="./sub.html">외국도서</a></li>
+                    <li><a href="./sub.html">eBook<i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="main_nav_sub">
+                            <li>일반도서</li>
+                            <li>로맨스/BL</li>
+                            <li>판타지/무협</li>
+                            <li>sam</li>
+                            <li>코믹스</li>
+                            <li>오디오북</li>
+                            <li>학술논문</li>
+                        </ul>
+                    </li>
+                    <li><a href="./sub.html">웹소설</a></li>
+                    <li><a href="./sub.html">기프트<i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="main_nav_sub">
+                            <li>디자인문구</li>
+                            <li>디지털</li>
+                            <li>키친/푸드</li>
+                            <li>오피스</li>
+                            <li>필기구</li>
+                        </ul>
+                    </li>
+                    <li><a href="./sub.html">음반<i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="main_nav_sub">
+                            <li>음반</li>
+                            <li>DVD</li>
+                            <li>블루레이</li>
+                        </ul>
+                    </li>
+                    <li><a href="./sub.html">중고장터</a></li>
+                    <li><a href="./sub.html"><i class="fa-regular fa-square-plus"></i></a>
+                        <ul class="main_nav_sub">
+                            <li>북캐스트</li>
+                            <li>북뉴스</li>
+                            <li>블로그</li>
+                            <li>북모닝</li>
+                            <li>문화행사</li>
+                            <li>스토리</li>
+                            <li>개인출판</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="sub_nav">
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">사은품</a></li>
+                    <li><a href="#">Picks</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+        <section>
+            <div id="slider_wrap">
+                <div id="slider">
+                    <div id="slider_main">
+                        <div class="slider_main_box">
+                            <div id="slider_main_imgbox">
+                                <div class="slider_main_imgbox1">
+                                    <a href="#"><img src="img/slider_main1jpg.jpg" alt="slide1"></a>
+                                </div>
+                                <div class="slider_main_imgbox1">
+                                    <a href="#"><img src="img/slider_main_img1-1.jpg" alt="slide1-1"></a>
+                                    <p><strong>변화하는 세계 질서</strong></p>
+                                    <p>지난 500년간의 경제적, 정치적 패턴을 파악해 만든 '빅 사이클'을 이해해야 한다!</p>
+                                </div>
+
+                                <div class="slider_main_imgbox1">
+                                    <a href="#"><img src="img/slider_main_img1-2.jpg" alt="slide1-2"></a>
+                                    <p><strong>파친코 1</strong></p>
+                                    <p>기다림의 끝, 새롭게 만나는 파친코. 회복과 연민에 대한 강력한 이야기!</p>
+                                </div>
+
+                                <div class="slider_main_imgbox1">
+                                    <a href="#"><img src="img/slider_main_img1-3.jpg" alt="slide1-3"></a>
+                                    <p><strong>인류 본사</strong></p>
+                                    <p>동서양을 횡단하는 '중간문명'의 대서사! 200여 장의 컬러사진과 지도 수록!</p>
+                                </div>
+                            </div>
+                            <div class="slider_main_imgbox1-2">
+                                <a href="#"><img src="img/slider_main_2.jpg" alt="slide2"></a>
+                            </div>
+                            <div class="slider_main_imgbox1-2">
+                                <a href="#"><img src="img/slider_main3.jpg" alt="slide3"></a>
+                            </div>
+                            <div class="slider_main_imgbox2">
+                                <a href="#"><img src="img/slider_main4-1.jpg" alt="slide4-1"></a>
+                                <a href="#"><img src="img/slider_main4-2.jpg" alt="slide4-2"></a>
+                                <a href="#"><img src="img/slider_main4-3.jpg" alt="slide4-3"></a>
+                            </div>
+                            <div class="slider_main_imgbox1-2">
+                                <a href="#"><img src="img/slider_main5-1.jpg" alt="slide5-1"></a>
+                            </div>
+                            <div class="slider_main_imgbox2">
+                                <a href="#"><img src="img/slider_main6-1.jpg" alt="slide6-1"></a>
+                                <a href="#"><img src="img/slider_main6-2.jpg" alt="slide6-2"></a>
+                                <a href="#"><img src="img/slider_main6-3.jpg" alt="slide6-3"></a>
+                            </div>
+                            <div class="slider_main_imgbox2">
+                                <a href="#"><img src="img/slider_main7-1.jpg" alt="slide7-1"></a>
+                                <a href="#"><img src="img/slider_main7-2.jpg" alt="slide7-2"></a>
+                                <a href="#"><img src="img/slider_main7-3.jpg" alt="slide7-3"></a>
+                            </div>
+                            <ul id="slider_main_btn">
+                                <li class="s_btn">요즘 이 책</li>
+                                <li>핫이슈</li>
+                                <li>새로나온책</li>
+                                <li>기획/테마</li>
+                                <li>eBook</li>
+                                <li>sam</li>
+                                <li>한정특가</li>
+                            </ul>
+                        </div>
+                        <div class="slider_sub_box">
+                            <div class="slider_sub_mini1">
+                                <img src="img/slider_sub_title.gif" alt="slideImg">
+                                <div class="anna_img"><img src="img/slider_sub1.jpg" alt="slideImg"></div>
+                                <h4>이름 직업 학력, 다 거짓이었다</h4>
+                                <p>수지 주연 ❮안나❯ 원작소설</p>
+                            </div>
+                            <div class="slider_sub_mini1-2">
+                                <ul>
+                                    <li>《달 샤베트》 수상을 축하합니다</li>
+                                    <li>이그노벨상 찐광기 레전드</li>
+                                    <li>'좋은 삶'이란 무엇일까?</li>
+                                    <li>대국민 살인범 찾기 서바이벌</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="miniwrap">
+                        <div class="slider_sub_mini2">
+                            <a href="#"><img src="img/sub_mini2.png" alt="mini1"></a>
+                            <a href="#"><img src="img/mini_close.jpg" alt="close" class="close"></a>
+                        </div>
+                        <div class="slider_sub_mini3">
+                            <a href="#"><img src="img/sub_mini3.jpg" alt="mini2"></a>
+                            <a href="#"><img src="img/mini_close.jpg" alt="close" class="close"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="slidertop_wrap">
+                <div id="slider_top_box">
+                    <div class="slider_top_list">
+                        <a href="#"><img src="img/sliderlist1_lefttop.jpg" alt="top1"></a>
+                    </div>
+                    <div class="slider_top_list">
+                        <a href="#"><img src="img/sliderlist1_midtop.jpg" alt="top2"></a>
+                    </div>
+                    <div class="slider_top_list">
+                        <a href="#"><img src="img/sliderlist1_righttop.jpg" alt="top3"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sliderbottom_wrap">
+                <div id="slider_bottom_box">
+                    <div class="slider_bottom_list">
+                        <a href="#"><img src="img/sliderlist1_left.jpg" alt="bottom1"></a>
+                    </div>
+                    <div class="slider_bottom_list">
+                        <a href="#"><img src="img/sliderlist1_mid.jpg" alt="bottom2"></a>
+                    </div>
+                    <div class="slider_bottom_list">
+                        <a href="#"><img src="img/sliderlist1_right.jpg" alt="bottom3"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="today_wrap">
+                <div class="today_book_box">
+                    <div id="today_books">
+                        <div class="today_title">
+                            <h2>오늘의 책</h2>
+                            <ul>
+                                <li>국내도서</li>
+                                <li>eBook</li>
+                                <li>sam</li>
+                            </ul>
+                            <i class="fa-regular fa-square-plus"></i>
+                        </div>
+                        <div id="today_book_wrap">
+                            <div class="today_book">
+                                <div class="today_book_img">
+                                    <img src="img/today_book_img1.jpg" class="today_book_img1" alt="today_book">
+                                    <img src="img/today_book_img2.jpg" class="today_book_img2" alt="today_book">
+                                    <img src="img/today_book_img3.jpg" class="today_book_img3" alt="today_book">
+                                </div>
+                                <div class="today_book_sub_box">
+                                    <div class="today_book_sub_img">
+                                        <img src="img/today_book_sub_img1-1.jpg" alt="sub1_img">
+                                        <img src="img/today_book_sub_img1-2.jpg" alt="sub1_img">
+                                        <img src="img/today_book_sub_img1-3.jpg" alt="sub1_img">
+                                        <img src="img/today_book_sub_img1-4.jpg" alt="sub1_img">
+                                        <img src="img/today_book_sub_img1-5.jpg" alt="sub1_img">
+                                        <img src="img/today_book_sub_img1-6.jpg" alt="sub1_img">
+                                        <img src="img/today_book_sub_img1-7.jpg" alt="sub1_img">
+                                        <span class="today_prev"><i class="fa fa-chevron-left"></i></span>
+                                        <span class="today_next"><i class="fa fa-chevron-right"></i></span>
+                                        <div class="today_book_title">
+                                            <div class="today_book_text">
+                                                <span>박문호 박사의 빅히스토리 공부(양장본 HardCover) <span>박문호 | 김영사</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="today_book">
+                                <div class="today_book_img">
+                                    <img src="img/today_book_img2-3.jpg" class="today_book_img1" alt="today_book">
+                                    <img src="img/today_book_img2-2.jpg" class="today_book_img2" alt="today_book">
+                                    <img src="img/today_book_img2-1.jpg" class="today_book_img3" alt="today_book">
+                                </div>
+                                <div class="today_book_sub_box">
+                                    <div class="today_book_sub_img">
+                                        <img src="img/today_book_sub_img2-1.jpg" alt="sub1_img">
+                                        <img src="img/today_book_sub_img2-2.jpg" alt="sub1_img">
+                                        <img src="img/today_book_sub_img2-3.jpg" alt="sub1_img">
+                                        <span class="today_prev"><i class="fa fa-chevron-left"></i></span>
+                                        <span class="today_next"><i class="fa fa-chevron-right"></i></span>
+                                        <div class="today_book_title">
+                                            <div class="today_book_text">
+                                                <span>마흔의 문장들 <span>유지현 | 타인의사유</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="today_book">
+                                <div class="today_book_img">
+                                    <img src="img/today_book_img3-1.jpg" class="today_book_img1" alt="today_book">
+                                    <img src="img/today_book_img3-2.jpg" class="today_book_img2" alt="today_book">
+                                    <img src="img/today_book_img3-3.jpg" class="today_book_img3" alt="today_book">
+                                </div>
+                                <div class="today_book_sub_box">
+                                    <div class="today_book_sub_img">
+                                        <img src="img/today_book_sub_img3-1.jpg" alt="sub1_img">
+                                        <span class="today_prev"><i class="fa fa-chevron-left"></i></span>
+                                        <span class="today_next"><i class="fa fa-chevron-right"></i></span>
+                                        <div class="today_book_title">
+                                            <div class="today_book_text">
+                                                <span>각별한 당신 <span>김종철 | 도서출판 사이드웨이</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="today_ad_warp">
+                        <div class="today_ad1">
+                            <img src="img/today_ad1.jpg" alt="today_ad">
+                        </div>
+                        <div class="today_ad2">
+                            <img src="img/today_ad2.jpg" alt="today_ad">
+                        </div>
+                    </div>
+                    <div id="today_side">
+                        <div class="side_img">
+                            <img src="img/today_side1.jpg" alt="sideimg">
+                        </div>
+                        <div class="side_img">
+                            <img src="img/today_side2.gif" alt="sideimg">
+                        </div>
+                        <div class="side_img">
+                            <img src="img/today_side3.jpg" alt="sideimg">
+                        </div>
+                        <div class="side_img">
+                            <img src="img/today_side4.jpg" alt="sideimg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hot_issue">
+                <div class="issue_title">
+                    <h2>화제의 신간</h2>
+                    <ul>
+                        <li>국내도서</li>
+                        <li>외국도서</li>
+                        <li>eBook</li>
+                        <li>sam</li>
+                        <li>음반/기프트</li>
+                    </ul>
+                    <i class="fa-regular fa-square-plus"></i>
+                </div>
+
+                <div class="issue_box">
+                    <div class="issue_book_wrap">
+                        <div class="issue_book">
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                        </div>
+                        <div class="issue_book">
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                        </div>
+                        <div class="issue_book">
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                        </div>
+                    </div>
+                    <span class="issue_prev"><i class="fa fa-chevron-left"></i></span>
+                    <span class="issue_next"><i class="fa fa-chevron-right"></i></span>
+                </div>
+
+                <div class="issue_box">
+                    <div class="issue_book_wrap">
+                        <div class="issue_book2">
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                        </div>
+                        <div class="issue_book2">
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                        </div>
+                        <div class="issue_book2">
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                        </div>
+                    </div>
+                    <span class="issue_prev2"><i class="fa fa-chevron-left"></i></span>
+                    <span class="issue_next2"><i class="fa fa-chevron-right"></i></span>
+                </div>
+
+                <div class="issue_box">
+                    <div class="issue_book_wrap">
+                        <div class="issue_book3">
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                        </div>
+                        <div class="issue_book3">
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                        </div>
+                        <div class="issue_book3">
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                        </div>
+                    </div>
+                    <span class="issue_prev3"><i class="fa fa-chevron-left"></i></span>
+                    <span class="issue_next3"><i class="fa fa-chevron-right"></i></span>
+                </div>
+
+                <div class="issue_box">
+                    <div class="issue_book_wrap">
+                        <div class="issue_book4">
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                        </div>
+                        <div class="issue_book4">
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                        </div>
+                        <div class="issue_book4">
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                        </div>
+                    </div>
+                    <span class="issue_prev4"><i class="fa fa-chevron-left"></i></span>
+                    <span class="issue_next4"><i class="fa fa-chevron-right"></i></span>
+                </div>
+
+                <div class="issue_box">
+                    <div class="issue_book_wrap">
+                        <div class="issue_book5">
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                        </div>
+                        <div class="issue_book5">
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                        </div>
+                        <div class="issue_book5">
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                            <div class="issue_book_img"></div>
+                        </div>
+                    </div>
+                    <span class="issue_prev5"><i class="fa fa-chevron-left"></i></span>
+                    <span class="issue_next5"><i class="fa fa-chevron-right"></i></span>
+                </div>
+            </div>
+
+            <div id="sample">
+                <div class="sample_box">
+                    <div class="sample_title">
+                        <ul>
+                            <li><h3>OOO님을 위한 Picks 추천 샘플</h3></li>
+                            <li><span>[로그인 하고 나만의 AI 맞춤추천 받아보세요]</span></li>
+                        </ul>
+                        <i class="fa-regular fa-square-plus"></i>
+                    </div>
+                    <div class="sample_book">
+                        <div id="sample_book_img">
+                            <strong>감수성이 예민한 신중형</strong>
+                            <img src="img/bg_pick.png" alt="sample">
+                            <ul>
+                                <li>> 선호분야 : 시/에세이/소설/인문</li>
+                                <li>> 선호작가 : 김영하</li>
+                                <li>> 독서주기 : 한달1.0권</li>
+                                <li>> 독서등급 : LV.7</li>
+                            </ul>
+                        </div>
+                        <div class="sample_book_img"></div>
+                        <div class="sample_book_img"></div>
+                        <div class="sample_book_img"></div>
+                    </div>
+                </div>
+                <div class="keyword">
+                    <h4>키워드 Pick</h4>
+                    <ul>
+                        <li>인생</li>
+                        <li>유튜브</li>
+                        <li>소설</li>
+                        <li>위로</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="only">
+                <div class="only_s">
+                    <img src="img/only.gif" alt="logo">
+                </div>
+                <div class="only_b_all_wrap">
+                    <div class="only_b_wrap">
+                        <div class="only_b">
+                            <a href="#"><img src="img/icon_only_1.gif" alt="icon"></a>
+                            <a href="#"><img src="img/icon_only_2.gif" alt="icon"></a>
+                            <a href="#"><img src="img/icon_only_3.gif" alt="icon"></a>
+                            <a href="#"><img src="img/icon_only_4.gif" alt="icon"></a>
+                            <a href="#"><img src="img/icon_only_5.gif" alt="icon"></a>
+                            <a href="#"><img src="img/icon_only_6.gif" alt="icon"></a>
+                        </div>
+
+                        <div class="only_b">
+                            <a href="#"><img src="img/icon_only_7.gif" alt="icon"></a>
+                            <a href="#"><img src="img/icon_only_8.gif" alt="icon"></a>
+                            <a href="#"><img src="img/icon_only_9.gif" alt="icon"></a>
+                            <a href="#"><img src="img/icon_only_10.gif" alt="icon"></a>
+                            <a href="#"><img src="img/icon_only_11.gif" alt="icon"></a>
+                            <a href="#"><img src="img/icon_only_12.gif" alt="icon"></a>
+                        </div>
+
+                        <div class="only_b">
+                            <a href="#"><img src="img/icon_only_13.gif" alt="icon"></a>
+                            <a href="#"><img src="img/icon_only_14.gif" alt="icon"></a>
+                            <a href="#"><img src="img/icon_only_15.gif" alt="icon"></a>
+                            <a href="#"><img src="img/icon_only_16.gif" alt="icon"></a>
+                            <a href="#"><img src="img/icon_only_17.gif" alt="icon"></a>
+                            <a href="#"><img src="img/icon_only_18.gif" alt="icon"></a>
+                        </div>
+                    </div>
+                    <span class="only_prev"><i class="fa-solid fa-angle-left"></i></span>
+                    <span class="only_next"><i class="fa-solid fa-angle-right"></i></span>
+                </div>
+            </div>
+
+            <div id="rising_wrap">
+                <div id="rising">
+                    <img src="img/rstar.gif" alt="logo">
+                    <div id="rstar_wrap">
+                        <ul class="rstar_slide">
+                            <li><img src="img/rs01.jpg" alt="slide"></li>
+                            <li><img src="img/rs02.jpg" alt="slide"></li>
+                            <li><img src="img/rs03.jpg" alt="slide"></li>
+                            <li> <img src="img/rs04.jpg" alt="slide"></li>
+                        </ul>
+                        <span class="rstar_prev"><i class="fa fa-chevron-left"></i></span>
+                        <span class="rstar_next"><i class="fa fa-chevron-right"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="book_list">
+                <div class="book_list_title">
+                    <h2>이럴 땐 이런 책</h2>
+                    <i class="fa-regular fa-square-plus"></i>
+                </div>
+                <div id="book_list_box_wrap">
+                    <div id="book_list_imgbox">
+                        <img src="img/life.jpg" alt="list_logo">
+                    </div>
+                    <div id="book_list_slide_wrap">
+                        <div class="book_list_slide">
+                            <div class="book_list_imgbox">
+                                <div class="book_list_img_title">
+                                    <h5><a href="#">공감</a></h5>
+                                    <ul>
+                                        <li>#감동</li>
+                                        <li>#재미</li>
+                                    </ul>
+                                </div>
+                                <div class="book_list_in_imgbox">
+                                    <a href="#"><img src="img/book_list1.jpg" alt="list"></a>
+                                    <h5><a href="#">내 인생의 성장소설</a></h5>
+                                </div>
+                                <ul>
+                                    <li><a href="#">책 읽는 즐거움</a></li>
+                                    <li><a href="#">어른을 위한 성장담</a></li>
+                                    <li><a href="#">이런 책은 처음이야</a></li>
+                                    <li><a href="#">시, 쉽게 읽기</a></li>
+                                </ul>
+                            </div>
+                            <div class="book_list_imgbox">
+                                <div class="book_list_img_title">
+                                    <h5><a href="#">배움</a></h5>
+                                    <ul>
+                                        <li>#지식</li>
+                                        <li>#입문</li>
+                                    </ul>
+                                </div>
+
+                                <div class="book_list_in_imgbox">
+                                    <a href="#"><img src="img/book_list2.jpg" alt="list"></a>
+                                    <h5><a href="#">그림 쉽게 읽기</a></h5>
+                                </div>
+                                <ul>
+                                    <li><a href="#">글쓰기가 두려운 당신에게</a></li>
+                                    <li><a href="#">나무&숲 이야기</a></li>
+                                    <li><a href="#">밤새워 읽는 한국사</a></li>
+                                    <li><a href="#">쉽게 읽는 과학이야기</a></li>
+                                </ul>
+                            </div>
+                            <div class="book_list_imgbox">
+                                <div class="book_list_img_title">
+                                    <h5><a href="#">사람</a></h5>
+                                    <ul>
+                                        <li>#가족</li>
+                                        <li>#친구</li>
+                                    </ul>
+                                </div>
+
+                                <div class="book_list_in_imgbox">
+                                    <a href="#"><img src="img/book_list3.jpg" alt="list"></a>
+                                    <h5><a href="#">감사 선물책</a></h5>
+                                </div>
+                                <ul>
+                                    <li><a href="#">40대 이후, Restart</a></li>
+                                    <li><a href="#">꼭 한번 읽어볼만한 평전/자서전</a></li>
+                                    <li><a href="#">아티스트들의 목소리</a></li>
+                                    <li><a href="#">엄마 이야기</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="book_list_slide">
+                            <div class="book_list_imgbox">
+                                <div class="book_list_img_title">
+                                    <h5><a href="#">생각</a></h5>
+                                    <ul>
+                                        <li>#생각</li>
+                                        <li>#심리</li>
+                                    </ul>
+                                </div>
+                                <div class="book_list_in_imgbox">
+                                    <a href="#"><img src="img/book_list4.jpg" alt="list"></a>
+                                    <h5><a href="#">어떠헤 나이들 것인가</a></h5>
+                                </div>
+                                <ul>
+                                    <li><a href="#">관계의 심리학</a></li>
+                                    <li><a href="#">페미니즘 & 젠더</a></li>
+                                    <li><a href="#">지금, 이 시대를 읽다</a></li>
+                                    <li><a href="#">만화로 읽는 인문/교양</a></li>
+                                </ul>
+                            </div>
+                            <div class="book_list_imgbox">
+                                <div class="book_list_img_title">
+                                    <h5><a href="#">생활</a></h5>
+                                    <ul>
+                                        <li>#의식주</li>
+                                        <li>#라이프스타일</li>
+                                    </ul>
+                                </div>
+
+                                <div class="book_list_in_imgbox">
+                                    <a href="#"><img src="img/book_list5.jpg" alt="list"></a>
+                                    <h5><a href="#">마음을 움직이는 여행에세이</a></h5>
+                                </div>
+                                <ul>
+                                    <li><a href="#">대안적인 삶을 찾다</a></li>
+                                    <li><a href="#">도시 이야기</a></li>
+                                    <li><a href="#">음식 이야기</a></li>
+                                    <li><a href="#">나의 사랑스런 반려동물</a></li>
+                                </ul>
+                            </div>
+                            <div class="book_list_imgbox">
+                                <div class="book_list_img_title">
+                                    <h5><a href="#">추천</a></h5>
+                                    <ul>
+                                        <li>#죽기전필독</li>
+                                        <li>#미디어</li>
+                                    </ul>
+                                </div>
+
+                                <div class="book_list_in_imgbox">
+                                    <a href="#"><img src="img/book_list6.jpg" alt="list"></a>
+                                    <h5><a href="#">아마존 선정, 어린이 필독서 100</a></h5>
+                                </div>
+                                <ul>
+                                    <li><a href="#">타임지 선정, 20세기 최고의 소설 100</a></li>
+                                    <li><a href="#">르몽드 선정 세기의 책 100</a></li>
+                                    <li><a href="#">아마존 선정, 인생책 TOP 100</a></li>
+                                    <li><a href="#">아마존 선정, 추리/스릴러 TOP 1</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="book_list_prev"><i class="fa fa-chevron-left"></i></span>
+                        <span class="book_list_next"><i class="fa fa-chevron-right"></i></span>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="story_wrap">
+                <div class="story_title">
+                    <h2>스토리:K</h2>
+                    <a href="#">
+                        <h5>북캐스트 <i class="fa fa-chevron-right"></i></h5>
+                    </a>
+                </div>
+                <div id="story_box_wrap">
+                    <div class="story_box_wrap">
+                        <div class="story_box">
+                            <a href="#"><img src="img/story1.jpg" alt="story_k"></a>
+                            <div class="story_text">
+                                <h3>북캐스트</h3>
+                            </div>
+                        </div>
+                        <h5>유튜버 자취남이 사는 사무실</h5>
+                        <p>집을 보면 그사람을 알 수 있다</p>
+                    </div>
+
+                    <div class="story_box_wrap">
+                        <div class="story_box">
+                            <a href="#"><img src="img/story2.jpg" alt="story_k"></a>
+                            <div class="story_text">
+                                <h3>북캐스트</h3>
+                            </div>
+                        </div>
+                        <h5>카파는 한 명의 인물이 아니다</h5>
+                        <p>또 다른 카파였던 여성 사진가</p>
+                    </div>
+
+                    <div class="story_box_wrap">
+                        <div class="story_box">
+                            <a href="#"><img src="img/story3.jpg" alt="story_k"></a>
+                            <div class="story_text">
+                                <h3>북캐스트</h3>
+                            </div>
+                        </div>
+                        <h5>나이 들수록 혼자 사는게 좋다</h5>
+                        <p>만족스러운 노후를 위한 조건 3</p>
+                    </div>
+
+                    <div class="story_box_wrap">
+                        <div class="story_box">
+                            <a href="#"><img src="img/story4.jpg" alt="story_k"></a>
+                            <div class="story_text">
+                                <h3>북캐스트</h3>
+                            </div>
+                        </div>
+                        <h5>한 컷의 사진 속 역사 추리</h5>
+                        <p>시대를 사진으로 읽는다</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="book_brand">
+                <div class="book_brand_title">
+                    <h2>감성메이커</h2>
+                    <ul class="dot">
+                        <li class="dot_hover"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="book_brand_box_wrap">
+                    <div class="book_brand_imgbox" onclick="location.href='#';">
+                        <a href="#"><img src="img/brand1.jpg" alt="goods"></a>
+                        <div class="brand_text">
+                            <h3>날 위한 갤럭시 워치4</h3>
+                        </div>
+                        <p><strong>[기프트]</strong> 삼성전자 갤럭시 워치4 40mm / SM-R860N</p>
+                    </div>
+                    <div class="book_brand_imgbox" onclick="location.href='#';">
+                        <a href="#"><img src="img/brand2.jpg" alt="goods"></a>
+                        <div class="brand_text">
+                            <h3>아침을 여는 발뮤다</h3>
+                        </div>
+                        <p><strong>[기프트]</strong> [공식수입원] 발뮤다 더 브루 (K06B) </p>
+                    </div>
+                    <div class="book_brand_imgbox" onclick="location.href='#';">
+                        <a href="#"><img src="img/brand3.png" alt="goods"></a>
+                        <div class="brand_text">
+                            <h3>헤드폰에 도전하다!</h3>
+                        </div>
+                        <p><strong>[기프트]</strong> 소니 WF-1000XM4 노이즈캔슬링 무선 이어폰</p>
+                    </div>
+                    <div class="book_brand_imgbox" onclick="location.href='#';">
+                        <a href="#"><img src="img/brand4.jpg" alt="goods"></a>
+                        <div class="brand_text">
+                            <h3>살아있는 전설, 마샬</h3>
+                        </div>
+                        <p><strong>[기프트]</strong> 마샬 STANMORE II 블루투스 스피커</p>
+                    </div>
+                </div>
+
+                <div class="book_brand_box_wrap">
+                    <div class="book_brand_imgbox" onclick="location.href='#';">
+                        <a href="#"><img src="img/brand5.jpg" alt="goods"></a>
+                        <div class="brand_text">
+                            <h3>정규 2집 리패키지 출시!</h3>
+                        </div>
+                        <p><strong>[음반]</strong>BEATBOX [정규 2집] [리패키지]</p>
+                    </div>
+                    <div class="book_brand_imgbox" onclick="location.href='#';">
+                        <a href="#"><img src="img/brand6.jpg" alt="goods"></a>
+                        <div class="brand_text">
+                            <h3>꿈꾸는 그대에게, 서울</h3>
+                        </div>
+                        <p><strong>[음반]</strong>SEOUL</p>
+                    </div>
+                    <div class="book_brand_imgbox" onclick="location.href='#';">
+                        <a href="#"><img src="img/brand7.jpg" alt="goods"></a>
+                        <div class="brand_text">
+                            <h3>미노이 정규 1집!!</h3>
+                        </div>
+                        <p><strong>[음반]</strong>IN MY ROOM [정규 1집]</p>
+                    </div>
+                    <div class="book_brand_imgbox" onclick="location.href='#';">
+                        <a href="#"><img src="img/brand8.jpg" alt="goods"></a>
+                        <div class="brand_text">
+                            <h3>잔망미 컴백!</h3>
+                        </div>
+                        <p><strong>[음반]</strong>PROOF [COMPACT EDITION]</p>
+                    </div>
+                </div>
+
+                <div class="book_brand_box_wrap">
+                    <div class="book_brand_imgbox" onclick="location.href='#';">
+                        <a href="#"><img src="img/brand9.jpg" alt="goods"></a>
+                        <div class="brand_text">
+                            <h3>세븐틴 정규 4집</h3>
+                        </div>
+                        <p><strong>[음반]</strong> FACE THE SUN [정규 4집] [CARAT VER]</p>
+                    </div>
+                    <div class="book_brand_imgbox" onclick="location.href='#';">
+                        <a href="#"><img src="img/brand10.jpg" alt="goods"></a>
+                        <div class="brand_text">
+                            <h3>임영웅 정규1집!</h3>
+                        </div>
+                        <p><strong>[음반]</strong>IM HERO [정규 1집] [GIFT VER] [한정반]</p>
+                    </div>
+                    <div class="book_brand_imgbox" onclick="location.href='#';">
+                        <a href="#"><img src="img/brand11.jpg" alt="goods"></a>
+                        <div class="brand_text">
+                            <h3>LP로 듣는 폴킴</h3>
+                        </div>
+                        <p><strong>[음반]</strong>Paul Kim - PKALBUM [다크 그린 LP]</p>
+                    </div>
+                    <div class="book_brand_imgbox" onclick="location.href='#';">
+                        <a href="#"><img src="img/brand12.jpg" alt="goods"></a>
+                        <div class="brand_text">
+                            <h3>산뜻하게 듣는 잔나비</h3>
+                        </div>
+                        <p><strong>[음반]</strong>잔나비 소곡집 Ⅱ: 초록을거머쥔우리는</p>
+                    </div>
+                </div>
+
+                <div class="book_brand_box_wrap">
+                    <div class="book_brand_imgbox" onclick="location.href='#';">
+                        <a href="#"><img src="img/brand13.jpg" alt="goods"></a>
+                        <div class="brand_text">
+                            <h3>The Scent of PAGE</h3>
+                        </div>
+                        <p>교보문고 시그니처 향</p>
+                    </div>
+                    <div class="book_brand_imgbox" onclick="location.href='#';">
+                        <a href="#"><img src="img/brand14.jpg" alt="goods"></a>
+                        <div class="brand_text">
+                            <h3>오늘을 더 특별하게</h3>
+                        </div>
+                        <p>책 그리고 꽃</p>
+                    </div>
+                    <div class="book_brand_imgbox" onclick="location.href='#';">
+                        <a href="#"><img src="img/brand15.jpg" alt="goods"></a>
+                        <div class="brand_text">
+                            <h3>리커버:K #70</h3>
+                        </div>
+                        <p>공간의 미래(리커버:K)</p>
+                    </div>
+                    <div class="book_brand_imgbox" onclick="location.href='#';">
+                        <a href="#"><img src="img/brand16.jpg" alt="goods"></a>
+                        <div class="brand_text">
+                            <h3>CUUB 에디션</h3>
+                        </div>
+                        <p>교보문고 아트토이북 Ⅲ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="service_wrap">
+                <div class="service_top_wrap">
+                    <div id="service_top">
+                        <div class="service_top_box">
+                            <h2><a href="#">공지사항</a> <i class="fa fa-chevron-right"></i></h2>
+                            <p><a href="#">컬처랜드 시스템 점검 안내 (7/21)</a></p>
+                        </div>
+                        <div class="service_top_box">
+                            <h2><a href="#">당첨자발표</a> <i class="fa fa-chevron-right"></i></h2>
+                            <p><a href="#">[문학/만화] ❮거짓말들❯ 기대평 이벤트 당첨자 발표</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service_boxs">
+                    <div class="service_mini_box">
+                        <h2>회원혜택</h2>
+                        <ul>
+                            <li><strong><a href="#">Prestige Lounge</a></strong></li>
+                            <li><a href="#">신규회원 혜택</a></li>
+                            <li><a href="#">등급별 혜택</a></li>
+                            <li><a href="#">출석체크</a></li>
+                            <li><a href="#">참좋은 교보문고</a></li>
+                        </ul>
+                    </div>
+                    <div class="service_mini_box">
+                        <h2>쇼핑 TIP</h2>
+                        <ul>
+                            <li><a href="#">제휴포인트/상품권</a></li>
+                            <li><strong><a href="#">교보문고 기프트카드</a></strong></li>
+                            <li><strong><a href="#">대량구매</a></strong></li>
+                            <li><a href="#">출판사전화번호안내</a></li>
+                        </ul>
+                    </div>
+                    <div class="service_mini_box">
+                        <h2>빠른 서비스</h2>
+                        <ul>
+                            <li><a href="#">북클럽카드 등록</a></li>
+                            <li><a href="#">영수증 후 적립</a></li>
+                            <li><a href="#">교보캐시 조회·충전</a></li>
+                            <li><a href="#">교보e캐시 조회·충전</a></li>
+                            <li><a href="#">기프트카드 조회·충전</a></li>
+                            <li><a href="#">미이용회원 조회/복원</a></li>
+                            <li><a href="#">협력사여러분</a></li>
+                        </ul>
+                    </div>
+                    <div class="service_mini_box">
+                        <h2>교보문고 소식</h2>
+                        <ul>
+                            <li><a href="#">페이스북</a></li>
+                            <li><a href="#">트위터(교보문고)</a></li>
+                            <li><a href="#">트위터(인터넷교보문고)</a></li>
+                            <li><a href="#">인스타그램</a></li>
+                            <li><a href="#">유튜브</a></li>
+                        </ul>
+                    </div>
+                    <div class="service_mini_box">
+                        <h2>FAQ</h2>
+                        <ul>
+                            <li><a href="#">주문 · 결제</a></li>
+                            <li><a href="#">eBook</a></li>
+                            <li><a href="#">도서 · 상품정보</a></li>
+                            <li><a href="#">중고장터</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="service_links">
+                    <ul>
+                        <li><a href="#">모바일교보문고 <i class="fa fa-chevron-right"></i></a></li>
+                        <li><a href="#">바로 찾는 바로드림 <i class="fa fa-chevron-right"></i></a></li>
+                        <li><a href="#">중고장터 스마트비교 <i class="fa fa-chevron-right"></i></a></li>
+                        <li><a href="#">교보문고 기프트카드 <i class="fa fa-chevron-right"></i></a></li>
+                        <li><a href="#">매장안내 <i class="fa fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div id="footer_nav_wrap">
+                <div class="footer_nav">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li>|</li>
+                        <li><a href="#">이용약관</a></li>
+                        <li>|</li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li>|</li>
+                        <li><a href="#">청소년보호정책</a></li>
+                        <li>|</li>
+                        <li><a href="#">협력사여러분</a></li>
+                        <li>|</li>
+                        <li><a href="#">제휴·제안</a></li>
+                        <li>|</li>
+                        <li><a href="#">광고문의</a></li>
+                        <li>|</li>
+                        <li><a href="#">채용정보</a></li>
+                        <li><a href="#">FAMILY STYLE <i class="fa-solid fa-angle-down"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="footer_info_wrap">
+                <div class="footer_info">
+                    <div class="footer_logo">
+                        <img src="img/logo_footer.png" alt="logo">
+                    </div>
+                    <div class="info_b1">
+
+                        <p>㈜ 교보문고 서울시 종로구 종로 1 대표이사 : 안병현<br>
+                            사업자등록번호 : 102-81-11670<br>
+                            <strong>대표전화 : 1544-1900 (발신자 부담전화)</strong>
+                            팩스 : 0502-987-5711 (지역번호공통)<br>
+                            서울특별시 통신판매업신고번호 : 제 653호 <a href="#">▶사업자 정보확인</a>
+                        </p>
+
+                        <div class="copy">
+                            <p>COPYRIGHT(C)
+                                <strong>KYOBO BOOK CENTRE</strong>
+                                ALL RIGHTS RESERVED.
+                            </p>
+                        </div>
+                    </div>
+                    <div class=info_right>
+                        <div class="info_b2">
+                            <p>
+                                LG U+ 구매안전서비스 <a href="#">▶ 서비스 가입 확인</a><br>
+                                고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서
+                                가입한 LG유플러스의 구매안전서비스를 이용하실 수 있습니다.
+                            </p>
+
+                        </div>
+                        <div class="info_s1">
+                            <img src="img/info_s2.png" alt="mark">
+                            <p>정보보호관리체계<br>
+                                ISMS 인증획득
+                            </p>
+                        </div>
+                        <div class="info_s2">
+                            <p>[인증범위] 온라인 교보문고 서비스 운영<br>
+                                [유효기간] 2020.11.04. ~ 2023.11.03.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
