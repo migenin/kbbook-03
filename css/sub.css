@@ -178,6 +178,8 @@
         border: 1px solid #ccc;
     }
 
+    button {cursor: pointer;}
+
     .point_icon {
         display: flex;
     }
